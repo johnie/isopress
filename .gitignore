@@ -4,3 +4,4 @@
 node_modules
 vendor
 web/wp
+fabfile.pyc
