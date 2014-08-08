@@ -3,7 +3,6 @@
 
 from fabric.api import run, sudo, require, env, cd
 from fabric.contrib.files import exists
-from subprocess import check_output
 
 # Production configuration
 def production():
