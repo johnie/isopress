@@ -29,5 +29,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = HOSTNAME
 
   # Set synced folder
-  config.vm.synced_folder '.', '/vagrant', :mount_options => [ 'dmode=777,fmode=777' ]
+  config.vm.synced_folder '.', '/vagrant', :nfs => true, :mount_options => ['nolock,vers=3,udp']
 end
