@@ -1,12 +1,12 @@
 <?php
 /* Development */
-define('DB_NAME', '');
-define('DB_USER', '');
-define('DB_PASSWORD', '');
-define('DB_HOST', '');
+define('DB_NAME', 'isopress');
+define('DB_USER', 'root');
+define('DB_PASSWORD', 'root');
+define('DB_HOST', 'localhost');
 
-define('WP_HOME', '');
-define('WP_SITEURL', '');
+define('WP_HOME', 'http://dev.isopress.com');
+define('WP_SITEURL', 'http://dev.isopress.com/wp');
 
 define('SAVEQUERIES', true);
 define('WP_DEBUG', true);
