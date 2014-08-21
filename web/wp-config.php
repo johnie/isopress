@@ -7,5 +7,4 @@
  */
 
 require_once('config/application.php');
-// require_once('app/framework/isotop/base/bootstrap.php');
 require_once(ABSPATH . 'wp-settings.php');
