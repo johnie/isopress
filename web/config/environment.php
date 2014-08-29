@@ -7,7 +7,7 @@
 $hostname = strtolower(gethostname());
 
 switch ($hostname) {
-  case 'stf-fweb01':
+  case 'prod':
     define('WP_ENV', 'production');
     break;
   case 'stage':
