@@ -1,5 +1,5 @@
 <?php
-$root_dir = dirname(dirname(__FILE__)) . '/web';
+$root_dir = dirname(dirname(__FILE__)) . '/web';
 
 /**
  * Load right environment.
