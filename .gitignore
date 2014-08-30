@@ -1,0 +1,7 @@
+.vagrant
+.DS_Store
+.idea
+node_modules
+fabfile.pyc
+web/wp
+vendor
