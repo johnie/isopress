@@ -42,6 +42,15 @@ define('DISALLOW_FILE_EDIT', true);
 define('FS_METHOD', 'direct');
 
 /**
+ * Plugin settings.
+ */
+
+$plugin_dir = CONTENT_DIR . '/vendor/plugins';
+define('WP_PLUGIN_DIR', $root_dir . $plugin_dir);
+define('WP_PLUGIN_URL', WP_HOME . $plugin_dir);
+define('PLUGINDIR', $plugin_dir);
+
+/**
  * Bootstrap WordPress
  */
 
