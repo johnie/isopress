@@ -42,13 +42,21 @@ define('DISALLOW_FILE_EDIT', true);
 define('FS_METHOD', 'direct');
 
 /**
- * Plugin settings.
+ * Plugins directory settings.
  */
 
-$plugin_dir = CONTENT_DIR . '/vendor/plugins';
-define('WP_PLUGIN_DIR', $root_dir . $plugin_dir);
-define('WP_PLUGIN_URL', WP_HOME . $plugin_dir);
-define('PLUGINDIR', $plugin_dir);
+$plugins_dir = CONTENT_DIR . 'vendor/plugins';
+define('WP_PLUGIN_DIR', $root_dir . $plugins_dir);
+define('WP_PLUGIN_URL', WP_HOME . $plugins_dir);
+define('PLUGINDIR', $plugins_dir);
+
+/**
+ * MU-Plugins directory settings.
+ */
+
+$muplugins_dir = CONTENT_DIR . 'lib';
+define('WPMU_PLUGIN_DIR', $root_dir . $muplugins_dir);
+define('WPMU_PLUGIN_URL', WP_HOME . $muplugins_dir);
 
 /**
  * Bootstrap WordPress

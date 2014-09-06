@@ -3,7 +3,7 @@
 // Exit if accessed directly.
 if (!defined('ABSPATH')) exit;
 
-$path = dirname(__FILE__) . '/isopress/';
+$root = dirname(__FILE__);
 $files = array(
   'cleanup.php',
   'custom.php',
@@ -11,9 +11,6 @@ $files = array(
   'wrapper.php'
 );
 
-// Load all files.
 foreach ($files as $file) {
-  if (file_exists($path . $file)) {
-    require_once $path . $file;
-  }
+  require_once($root . '/' . $file);
 }
