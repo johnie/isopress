@@ -6,3 +6,4 @@ fabfile.pyc
 web/wp
 vendor
 *.log
+web/lib/page-types/
