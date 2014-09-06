@@ -11,7 +11,7 @@ The vendor map is for packages installed with composer and other external packag
 
 The web directory is the custom `wp-content` directory, `app` is the theme. No themes directory exists, if you like to add a themes directory you can do so and register that with WordPress and remove `theme.php` from `lib/isopress` directory.
 
-If you are using external plugins that creates directory in `wp-content` directory then you will have more directories in the web directry and that can be ugly!
+If you are using external plugins that creates directory in `wp-content` directory then you will have more directories in the web directory and that can be ugly!
 
 The WordPress system has it owns directory `wp` that are inside `web`. Basically you can move the `wp` one level up and configure so it loads the right way. 
 
