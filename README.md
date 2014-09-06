@@ -24,7 +24,7 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 	|-- lib
 	|-- uploads
 	|-- vendor
-		 |-- plugins
+		  |-- plugins
 	|-- wp
 ```
 
