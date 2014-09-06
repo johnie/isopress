@@ -9,7 +9,7 @@ This is the folder structure. A config directory where all your WordPress and ot
 
 The vendor map is for packages installed with composer and other external packages.
 
-The web directory is the custom `wp-content` directory, `app` is the theme. No themes directory exists, if you like to add a themes directory you can do so and register that with WordPress and remove `modern-structure.php` from `mu-plugins` directory.
+The web directory is the custom `wp-content` directory, `app` is the theme. No themes directory exists, if you like to add a themes directory you can do so and register that with WordPress and remove `theme.php` from `lib/isopress` directory.
 
 If you are using external plugins that creates directory in `wp-content` directory then you will have more directories in the web directry and that can be ugly!
 
