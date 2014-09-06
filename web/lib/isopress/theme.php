@@ -22,7 +22,7 @@ add_filter('theme_root', 'isopress_change_theme_root');
  */
 
 function isopress_change_theme_uri () {
-  return apply_filters('isopress_change_theme_uri', home_url() . '/app');
+  return apply_filters('isopress_change_theme_uri', home_url());
 }
 
 add_filter('theme_root_uri', 'isopress_change_theme_uri');
