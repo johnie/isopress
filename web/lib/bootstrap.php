@@ -49,9 +49,3 @@ function isopress_load_files ($lib_root) {
 
 // Load all directories in this directory.
 isopress_load_files(dirname(__FILE__));
-
-function test_load () {
-  register_ptb_directory(dirname(__FILE__) . '/page-types');
-}
-
-add_action('plugins_loaded', 'test_load');
