@@ -1,10 +1,11 @@
+
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cdd368f519fe5e40e055a53fe177b37c",
+    "hash": "1917022767ac1e95b295eb6a42fd09da",
     "packages": [
         {
             "name": "composer/installers",
@@ -134,10 +135,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "3.9.2",
+            "version": "4.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-3.9.2.zip",
+                "url": "https://wordpress.org/wordpress-4.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -147,21 +148,13 @@
             "type": "webroot"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": [],
     "prefer-stable": false,
     "platform": {
         "php": ">=5.3.2"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
