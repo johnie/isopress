@@ -33,4 +33,3 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 ### Configuration
 
 WP-Cron is disabled and you have to do a cron job on your machine to get it working again or remove the definition that disables WP-Cron.
->>>>>>> next
