@@ -24,3 +24,27 @@ add_filter('login_errors', 'isopress_change_login_errors');
 function isopress_title () {
   bloginfo('name') ?> | <?php is_home() ? bloginfo('description') : wp_title('|', true, 'right');
 }
+
+/**
+ * Change the upload path.
+ *
+ * @return string
+ */
+
+function isopress_upload_path () {
+  return WP_CONTENT_DIR . 'assets/uploads';
+}
+
+add_filter('option_upload_path', 'isopress_upload_path');
+
+/**
+ * Change the upload url path.
+ *
+ * @return string
+ */
+
+function isopress_upload_url_path () {
+  return WP_CONTENT_URL . 'assets/uploads';
+}
+
+add_filter('option_upload_url_path', 'isopress_upload_url_path');

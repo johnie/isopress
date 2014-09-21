@@ -45,22 +45,18 @@ define('FS_METHOD', 'direct');
  * Plugins directory settings.
  */
 
-define('WP_PLUGIN_DIR', WP_CONTENT_DIR . 'vendor/plugins');
-define('WP_PLUGIN_URL', WP_HOME . $plugins_dir);
-define('PLUGINDIR', $plugins_dir);
+$plugins_path = 'vendor/plugins';
+define('WP_PLUGIN_DIR', WP_CONTENT_DIR . $plugins_path);
+define('WP_PLUGIN_URL', WP_HOME . $plugins_path);
+define('PLUGINDIR', WP_CONTENT_DIR . $plugins_path);
 
 /**
  * MU-Plugins directory settings.
  */
 
-define('WPMU_PLUGIN_DIR', WP_CONTENT_DIR . 'lib');
-define('WPMU_PLUGIN_URL', WP_HOME . $muplugins_dir);
-
-/**
- * Upload directory settings.
- */
-
-define('UPLOADS', 'assets/uploads');
+$muplugins_path = 'lib';
+define('WPMU_PLUGIN_DIR', WP_CONTENT_DIR . $muplugins_path);
+define('WPMU_PLUGIN_URL', WP_HOME . $muplugins_path);
 
 /**
  * Bootstrap WordPress
