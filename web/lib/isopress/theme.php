@@ -34,7 +34,7 @@ add_filter('theme_root_uri', 'isopress_change_theme_uri');
  */
 
 function isopress_change_theme () {
-  return apply_filters('isopress_change_theme', 'app');
+  return apply_filters('isopress_change_theme', 'views');
 }
 
 add_filter('template', 'isopress_change_theme');
