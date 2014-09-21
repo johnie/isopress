@@ -9,7 +9,6 @@ if (!defined('ABSPATH')) exit;
 
 date_default_timezone_set('Europe/Stockholm');
 
-
 /**
  * Set up the content width value based on the theme's design.
  */
@@ -22,7 +21,7 @@ if (!isset($content_width)) {
  * Setup isopress theme.
  */
 
-function app_setup () {
+function site_setup () {
   // Setup language.
   $domain = 'isopress';
   $path = get_template_directory() . '/languages/' . $domain . '-' . get_locale() . '.mo';
@@ -38,4 +37,4 @@ function app_setup () {
   add_filter('use_default_gallery_style', '__return_false');
 }
 
-add_action('after_theme_setup', 'app_setup');
+add_action('after_theme_setup', 'site_setup');
