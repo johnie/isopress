@@ -1,4 +1,5 @@
-# Isopress
+# Isopress git ignore
+
 .vagrant
 .DS_Store
 .idea
@@ -10,4 +11,4 @@ vendor
 web/lib/page-types/
 web/assets/uploads/*
 
-# Custom git ignore stuff
+# Custom git ignore
