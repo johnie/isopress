@@ -7,3 +7,4 @@ web/wp
 vendor
 *.log
 web/lib/page-types/
+web/assets/uploads/*
