@@ -34,9 +34,6 @@ function app_setup () {
   // Add post formats.
   add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio'));
 
-  // Add editor style if needed.
-  // add_editor_style('/assets/css/editor-style.css');
-
   // Don't use the default gallery style.
   add_filter('use_default_gallery_style', '__return_false');
 }
