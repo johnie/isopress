@@ -1,3 +1,4 @@
+# Isopress
 .vagrant
 .DS_Store
 .idea
@@ -8,3 +9,5 @@ vendor
 *.log
 web/lib/page-types/
 web/assets/uploads/*
+
+# Custom git ignore stuff
