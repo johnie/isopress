@@ -1,5 +1,6 @@
 <?php
-$root_dir = dirname(dirname(__FILE__)) . '/web';
+
+$root_dir = dirname(dirname(__FILE__)) . '/web';
 
 /**
  * Load right environment.
@@ -47,7 +48,7 @@ define('FS_METHOD', 'direct');
 
 $plugins_path = 'vendor/plugins';
 define('WP_PLUGIN_DIR', WP_CONTENT_DIR . $plugins_path);
-define('WP_PLUGIN_URL', WP_HOME . $plugins_path);
+define('WP_PLUGIN_URL', WP_HOME . '/' . $plugins_path);
 define('PLUGINDIR', WP_CONTENT_DIR . $plugins_path);
 
 /**
@@ -56,7 +57,7 @@ define('PLUGINDIR', WP_CONTENT_DIR . $plugins_path);
 
 $muplugins_path = 'lib';
 define('WPMU_PLUGIN_DIR', WP_CONTENT_DIR . $muplugins_path);
-define('WPMU_PLUGIN_URL', WP_HOME . $muplugins_path);
+define('WPMU_PLUGIN_URL', WP_HOME . '/' . $muplugins_path);
 
 /**
  * Bootstrap WordPress
