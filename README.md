@@ -7,11 +7,11 @@ WordPress stack with a good base structure and deployment tool using [Fabric](ht
 
 ### Structure
 
-This is the folder structure. A config directory where all your WordPress and other configuration exists.
+This is the folder structure. This is not a regular WordPress structure. A config directory where all your WordPress and other configuration exists.
 
 The vendor map is for packages installed with composer and other external packages.
 
-The web directory is the custom `wp-content` directory, `app` is the theme. No themes directory exists, if you like to add a themes directory you can do so and register that with WordPress and remove `theme.php` from `lib/isopress` directory.
+The web directory is the custom `wp-content` directory, `views` is the theme. No themes directory exists. The `lib` directory is the `mu-plugins` directory, so there is where your `functions.php` code will be, since that code will always be loaded.
 
 If you are using external plugins that creates directory in `wp-content` directory then you will have more directories in the web directory and that can be ugly!
 
@@ -22,11 +22,12 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 |   |-- environments
 |-- vendor
 |-- web
-	|-- app
+	|-- assets
 	|-- lib
 	|-- uploads
 	|-- vendor
 		  |-- plugins
+	|-- views
 	|-- wp
 ```
 
