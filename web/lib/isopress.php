@@ -49,3 +49,9 @@ function isopress_load_files ($lib_root) {
 
 // Load all directories in this directory.
 isopress_load_files(dirname(__FILE__));
+
+function register_p () {
+  register_page_types_directory(dirname(__FILE__) . '/page-types');
+}
+
+add_action('after_setup_theme', 'register_p');
