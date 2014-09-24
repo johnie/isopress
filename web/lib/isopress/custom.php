@@ -32,7 +32,7 @@ function isopress_title () {
  */
 
 function isopress_upload_path () {
-  return get_template_directory() . '/assets/uploads';
+  return WP_CONTENT_URL . 'assets/uploads';
 }
 
 add_filter('option_upload_path', 'isopress_upload_path');
@@ -44,7 +44,7 @@ add_filter('option_upload_path', 'isopress_upload_path');
  */
 
 function isopress_upload_url_path () {
-  return get_template_directory_uri() . '/assets/uploads';
+  return WP_CONTENT_URL . 'assets/uploads';
 }
 
 add_filter('option_upload_url_path', 'isopress_upload_url_path');
