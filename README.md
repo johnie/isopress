@@ -43,4 +43,4 @@ Isopress is prepared work with [WordPress Automated Testing](https://make.wordpr
 /path/to/isopress$ svn co https://develop.svn.wordpress.org/trunk/ tests/wp
 ```
 
-Then you should be able to run `phpunit` in `path/to/isopress` directory.
+Then you should be able to run `phpunit` in `path/to/isopress` directory. Phpunit is configured to run all tests in `tests/cases` directory.
