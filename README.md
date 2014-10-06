@@ -23,8 +23,8 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 |-- vendor
 |-- web
 	|-- assets
+		|-- uploads
 	|-- lib
-	|-- uploads
 	|-- vendor
 		  |-- plugins
 	|-- views
@@ -34,3 +34,13 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 ### Configuration
 
 WP-Cron is disabled and you have to do a cron job on your machine to get it working again or remove the definition that disables WP-Cron.
+
+### Unit Test
+
+Isopress is prepared work with [WordPress Automated Testing](https://make.wordpress.org/core/handbook/automated-testing/). You have to checkout the `wordpress-develop` repository.
+
+```
+/path/to/isopress$ svn co https://develop.svn.wordpress.org/trunk/ tests/wp
+```
+
+Then you should be able to run `phpunit` in `path/to/isopress` directory.
