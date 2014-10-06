@@ -9,3 +9,5 @@ vendor
 web/wp
 web/lib/page-types/
 web/assets/uploads/*
+
+tests/wp

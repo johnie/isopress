@@ -1,0 +1,11 @@
+<phpunit
+	bootstrap="tests/wp/tests/phpunit/includes/bootstrap.php"
+        backupGlobals="false"
+        colors="true"
+        >
+    <testsuites>
+        <testsuite name="Isopress">
+            <directory suffix=".php">./tests/cases</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
