@@ -20,7 +20,10 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 ```
 |-- config
 |   |-- environments
-|-- vendor
+|-- tests
+	|-- cases
+	|-- wp
+|-- vendors
 |-- web
 	|-- assets
 		|-- uploads
