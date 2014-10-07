@@ -5,7 +5,7 @@
         >
     <testsuites>
         <testsuite name="Isopress">
-            <directory suffix=".php">./tests/cases</directory>
+            <directory prefix="test-" suffix=".php">./tests/cases</directory>
         </testsuite>
     </testsuites>
 </phpunit>
