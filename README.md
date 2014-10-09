@@ -11,7 +11,11 @@ This is the folder structure. This is not a regular WordPress structure. A confi
 
 The vendor map is for packages installed with composer and other external packages.
 
-The web directory is the custom `wp-content` directory, `views` is the theme. No themes directory exists. The `lib` directory is the `mu-plugins` directory, so there is where your `functions.php` code will be, since that code will always be loaded.
+The web directory is the custom `wp-content` directory, `controllers` is the theme. No themes directory exists. 
+
+The `views` directory contains twig templates that is renderd via [Timber](http://timber.upstatement.com).
+
+The `lib` directory is the `mu-plugins` directory, so there is where your `functions.php` code will be, since that code will always be loaded.
 
 If you are using external plugins that creates directory in `wp-content` directory then you will have more directories in the web directory and that can be ugly!
 
@@ -27,6 +31,7 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 |-- web
 	|-- assets
 		|-- uploads
+	|-- controllers
 	|-- lib
 	|-- vendor
 		  |-- plugins
