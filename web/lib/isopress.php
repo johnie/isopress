@@ -1,51 +1,43 @@
 <?php
 
 /**
- * Bootstrap libraries.
- *
- * Lib is the "mu-plugins" directory with a new name.
- * This file will load all libs in sub directories.
- *
- * @version 1.0.0
+ * Plugin Name: Isopress
+ * Plugin URI: http://github.com/frozzare/isopress
+ * Description: WordPress stack
+ * Author: Fredrik Forsmo
+ * Version: 1.0.0
+ * Author URI: http://forsmo.me/
  */
 
 // Exit if accessed directly.
-if (!defined('ABSPATH')) exit;
-
-/**
- * Load files in directories.
- *
- * @param string $lib_root
- */
-
-function isopress_load_files ($lib_root) {
-  $libs_dir = @opendir($lib_root);
-  $lib_files = array();
-
-  while (($file = readdir($libs_dir)) !== false) {
-    if (substr($file, 0, 1) == '.' ) {
-      continue;
-    }
-
-    if (is_dir($lib_root . '/' . $file)) {
-      $base_path = $lib_root . '/' . $file;
-
-      // Load libraries, will search for this files and require them:
-      // - directory/directory.php
-      // - directory/lib/directory.php
-
-      if (is_file($base_path . '/' . $file . '.php')) {
-        $lib_files[] = $base_path . '/' . $file . '.php';
-      } else if (is_file($base_path . '/lib/' . $file . '.php')) {
-        $lib_files[] = $base_path . '/lib/' . $file . '.php';
-      }
-    }
-  }
-
-  foreach ($lib_files as $lib_file) {
-    require_once $lib_file;
-  }
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
 }
 
-// Load all directories in this directory.
-isopress_load_files(dirname(__FILE__));
+/**
+ * All plugins in the right order to load.
+ * ".php" isn't required to add.
+ *
+ * "timber" will load "timber/timber.php"
+ * "timber.php" will load "timber/timber.php"
+ * "path/to/plugin.php" will load "path/to/plugin.php"
+ */
+
+$plugins   = array(
+	'timber',
+	'isopress'
+);
+
+$base_path = dirname( __FILE__ );
+
+foreach ( $plugins as $plugin ) {
+	if ( strpos( $plugin, '/' ) === false ) {
+		$plugin .= '/' . $plugin;
+	}
+
+	if ( substr( strrchr( $plugin, '.' ), 1 ) !== 'php' ) {
+		$plugin .= '.php';
+	}
+
+	require_once $base_path . '/' . $plugin;
+}
