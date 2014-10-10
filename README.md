@@ -13,7 +13,7 @@ The vendor map is for packages installed with composer and other external packag
 
 The web directory is the custom `wp-content` directory, `controllers` is the theme. No themes directory exists. 
 
-The `views` directory contains twig templates that is renderd via [Timber](http://timber.upstatement.com).
+The `views` directory contains twig templates that is renderd with [Timber](http://timber.upstatement.com).
 
 The `lib` directory is the `mu-plugins` directory, so there is where your `functions.php` code will be, since that code will always be loaded.
 
