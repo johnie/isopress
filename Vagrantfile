@@ -27,6 +27,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Set hostname
   config.vm.hostname = HOSTNAME
+  
+  # Forward MySQL port
+  config.vm.forward_port 3306, 3306
 
   # Set synced folder
   config.vm.synced_folder '.', '/vagrant', :nfs => true, :mount_options => ['nolock,vers=3,udp']
