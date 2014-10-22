@@ -26,8 +26,12 @@ add_action( 'init', 'isopress_cleanup' );
 /**
  * Clean search url.
  *
+ * @param array $query_vars
+ *
  * @link http://wordpress.org/support/topic/blank-search-sends-you-to-the-homepage#post-1772565
  * @link http://core.trac.wordpress.org/ticket/11330
+ *
+ * @return array
  */
 
 function isopress_clean_search_url( $query_vars ) {
