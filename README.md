@@ -26,6 +26,8 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 |   |-- environments
 |-- tests
 	|-- cases
+	|-- data
+	|-- includes
 	|-- wp
 |-- vendors
 |-- web
