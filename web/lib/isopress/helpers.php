@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return bool True if post_type match false otherwise.
  */
 
-function iso_is_post_stype( $id = 0, $post_type = '' ) {
+function iso_is_post_stype( $id = 0, $post_type ) {
 	if ( ! is_numeric( $id ) ) {
 		$post_type = $id;
 		$id        = get_the_id();
@@ -36,7 +36,7 @@ function iso_is_post_stype( $id = 0, $post_type = '' ) {
  * @return bool True if method match false otherwise.
  */
 
-function iso_is_method( $method = '' ) {
+function iso_is_method( $method ) {
 	return $_SERVER ['REQUEST_METHOD'] == strtoupper( $method );
 }
 
