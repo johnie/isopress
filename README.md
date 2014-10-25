@@ -26,8 +26,6 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 |   |-- environments
 |-- tests
 	|-- cases
-	|-- data
-	|-- includes
 	|-- wp
 |-- vendors
 |-- web
@@ -74,6 +72,12 @@ Check if request method is the same as the given method. Will return true or fal
 Remove trailing dobule or/and single quote. Will return string without trailing quotes.
 
 `iso_remove_trailing_quotes($str)`
+
+Example:
+
+```
+iso_remove_trailing_quotes('\"hello\"') => '"hello"'
+```
 
 ##### iso_current_url
 
