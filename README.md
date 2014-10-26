@@ -114,6 +114,7 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 		|-- bootstrap.php
 		|-- loader.php
 	|-- wp
+		|-- ...
 |-- vendors
 |-- web
 	|-- assets
@@ -130,6 +131,7 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 		|-- application.php
 		|-- assets.php
 		|-- isopress
+			|-- ...
 		|-- isopress.php
 	|-- vendor
 		  |-- plugins
@@ -142,6 +144,7 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 			|-- footer.twig
 			|-- head.twig
 	|-- wp
+		|-- ...
 ```
 
 ### Unit Test
