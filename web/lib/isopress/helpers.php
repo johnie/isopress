@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param int $id Default is `get_the_id` value.
  * @param string $post_type
+ * @since 1.0.0
  *
  * @return bool True if post_type match false otherwise.
  */
@@ -32,6 +33,7 @@ function iso_is_post_stype( $id = 0, $post_type ) {
  * Check if request method is the same as the given method.
  *
  * @param string $method
+ * @since 1.0.0
  *
  * @return bool True if method match false otherwise.
  */
@@ -45,6 +47,7 @@ function iso_is_method( $method ) {
  * PHP's $_POST object adds this automatic.
  *
  * @param string $str The string to check.
+ * @since 1.0.0
  *
  * @return string
  */
@@ -57,6 +60,7 @@ function iso_remove_trailing_quotes( $str ) {
  * Get current url.
  *
  * @param bool $parse Parse the url with `parse_url` and return object.
+ * @since 1.0.0
  *
  * @return string|object
  */

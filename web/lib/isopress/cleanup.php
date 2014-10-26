@@ -7,6 +7,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Clean up wp_head()
+ *
+ * @since 1.0.0
+ *
  */
 
 function isopress_cleanup() {
@@ -27,6 +30,7 @@ add_action( 'init', 'isopress_cleanup' );
  * Clean search url.
  *
  * @param array $query_vars
+ * @since 1.0.0
  *
  * @link http://wordpress.org/support/topic/blank-search-sends-you-to-the-homepage#post-1772565
  * @link http://core.trac.wordpress.org/ticket/11330
@@ -47,6 +51,8 @@ add_action( 'request', 'isopress_clean_search_url' );
 /**
  * Remove WordPress rss version.
  *
+ * @since 1.0.0
+ *
  * @return string
  */
 
@@ -59,6 +65,8 @@ add_filter( 'the_generator', 'isopress_remove_wp_version' );
 /**
  * Remove unnecessary dashboard widgets.
  * Uncomment "remove_meta_box ..." line to show the widget again.
+ *
+ * @since 1.0.0
  *
  * @link http://www.deluxeblogtips.com/2011/01/remove-dashboard-widgets-in-wordpress.html
  */

@@ -10,6 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @param string $root
  * @param array $exlude
+ * @since 1.0.0
  */
 
 function isopress_load_files( $root, $exlude = array() ) {

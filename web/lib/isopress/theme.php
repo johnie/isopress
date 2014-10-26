@@ -8,6 +8,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Change theme root.
  *
+ * @since 1.0.0
+ *
  * @return string
  */
 
@@ -20,6 +22,8 @@ add_filter( 'theme_root', 'isopress_change_theme_root' );
 /**
  * Change theme root uri.
  *
+ * @since 1.0.0
+ *
  * @return string
  */
 
@@ -31,6 +35,8 @@ add_filter( 'theme_root_uri', 'isopress_change_theme_uri' );
 
 /**
  * Change theme to the app directory theme.
+ *
+ * @since 1.0.0
  *
  * @return string
  */
@@ -46,6 +52,8 @@ add_filter( 'stylesheet', 'isopress_change_theme' );
 
 /**
  * Hide themes menu for all users.
+ *
+ * @since 1.0.0
  */
 
 function isopress_hide_themes_menu() {

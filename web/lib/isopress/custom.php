@@ -9,6 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Change login error message.
  *
  * @param $content
+ * @since 1.0.0
  *
  * @return string
  */
@@ -31,6 +32,8 @@ function isopress_title() {
 /**
  * Change the upload path.
  *
+ * @since 1.0.0
+ *
  * @return string
  */
 
@@ -42,6 +45,8 @@ add_filter( 'option_upload_path', 'isopress_upload_path' );
 
 /**
  * Change the upload url path.
+ *
+ * @since 1.0.0
  *
  * @return string
  */
