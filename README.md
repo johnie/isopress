@@ -25,7 +25,7 @@ Using [vassh](https://github.com/x-team/vassh) you can create the database:
 /path/to/isopress$ vassh "mysql -uroot -proot -e'create database isopress'"
 ```
 
-And then install the WordPress site:
+And then install the WordPress site using [vassh](https://github.com/x-team/vassh) and [WP-CLI](http://wp-cli.org):
 
 ```
 /path/to/isopress$ vassh "wp core install --title='Isopress' --admin_user='admin' --admin_password='password' --admin_email='my-email@gmail.com' --url='dev.isopress.com'"
