@@ -7,8 +7,9 @@ WordPress stack with a good base structure and deployment tool using [Fabric](ht
 
 ## ToC
 * [Get started](#get-started)
-* [Documentation](#documentation)
+* [Documentation](#documentation) 
   * [Configuration files](#configuration-files)
+  * [Deployment](#deployment)
   * [Helper functions](#helper-functions)
   * [Folder structure](#folder-structure)
   * [Composer](#composer)
@@ -48,6 +49,16 @@ Example:
 ### Configuration files
 
 TBA.
+
+### Deployment
+
+Isopress uses [Mina](http://mina-deploy.github.io/mina/) for deployment. In the `config/deploy` directory there are two files, one for production and one for staging that you should change so it fits your needs.
+
+Then you can deploy. Be sure to run `mina setup` for setting up folders on your servers. Then you can run `mina deploy` for staging deployment or `mina production deploy` for production deploy.
+
+It will create releases for each deployment so it easy to rollback your deployment, just run `mina rollback` for rollback on staging and `mina production rollback` for rollback on production.
+
+You should read the [Mina](http://mina-deploy.github.io/mina/) documentation!
 
 ### Helper functions
 
@@ -100,6 +111,10 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 ```
 |-- config
     |-- application.php
+    |-- deploy.rb
+    |-- deploy/
+    	|-- production.rb
+    	|-- staging.rb
 	|-- environment.php
 	|-- environments
 		|-- development.php
