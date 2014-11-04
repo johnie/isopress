@@ -1,5 +1,9 @@
 <?php
-/* Development */
+
+/**
+ * Development configuration.
+ */
+
 define('DB_NAME', 'isopress');
 define('DB_USER', 'root');
 define('DB_PASSWORD', 'root');
@@ -14,7 +18,7 @@ define('SCRIPT_DEBUG', true);
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('log_errors', 'On');
-ini_set('error_log', '/vagrant/dev.isopress.com/web/error.log');
+
 
 /* Get this keys at https://api.wordpress.org/secret-key/1.1/salt/ */
 define('AUTH_KEY',         'ITV#1DYW%1~}N}t-zB]p-w,4Sfv!kK*2B24thHB=:m|lgoJ@NZ?o<sO2+Juvy /a');

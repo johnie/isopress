@@ -1,5 +1,9 @@
 <?php
-/* Staging */
+
+/**
+ * Staging configuration.
+ */
+
 define('DB_NAME', '');
 define('DB_USER', '');
 define('DB_PASSWORD', '');
