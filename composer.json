@@ -29,7 +29,7 @@
     "composer/installers": "v1.0.12",
     "wordpress/wordpress": "4.0.1",
     "fancyguy/webroot-installer": "1.1.0",
-    "wpackagist-plugin/timber-library": ">=0.20.6"
+    "wpackagist-plugin/timber-library": ">=0.20.8"
   },
   "config": {
     "preferred-install": "dist"
