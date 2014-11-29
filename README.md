@@ -7,7 +7,7 @@ WordPress stack with a good base structure and deployment tool using [Fabric](ht
 
 ## ToC
 * [Get started](#get-started)
-* [Documentation](#documentation) 
+* [Documentation](#documentation)
   * [Configuration files](#configuration-files)
   * [Deployment](#deployment)
   * [Helper functions](#helper-functions)
@@ -98,7 +98,7 @@ Below this text you can se the folder structure. This is not a regular WordPress
 
 The vendor map is for packages installed with composer and other external packagqes.
 
-The web directory is the custom `wp-content` directory, `controllers` is the theme. No themes directory exists. 
+The web directory is the custom `wp-content` directory, `controllers` is the theme. No themes directory exists.
 
 The `views` directory contains twig templates that is renderd with [Timber](http://timber.upstatement.com).
 
@@ -106,7 +106,7 @@ The `lib` directory is the `mu-plugins` directory, so there is where your `funct
 
 If you are using external plugins that creates directory in `wp-content` directory then you will have more directories in the web directory and that can be ugly!
 
-The WordPress system has it owns directory `wp` that are inside `web`. Basically you can move the `wp` one level up and configure so it loads the right way. 
+The WordPress system has it owns directory `wp` that are inside `web`. Basically you can move the `wp` one level up and configure so it loads the right way.
 
 ```
 |-- config
@@ -143,11 +143,13 @@ The WordPress system has it owns directory `wp` that are inside `web`. Basically
 		|-- single.php
 		|-- style.css
 	|-- lib
-		|-- application.php
-		|-- assets.php
 		|-- isopress
 			|-- ...
 		|-- isopress.php
+    |-- site
+		  |-- assets.php
+      |-- site.php
+		  |-- ...
 	|-- vendor
 		  |-- plugins
 	|-- views
