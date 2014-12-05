@@ -55,7 +55,7 @@ if ( ! defined( 'UNIT_TEST_ENVIRONMENT' ) ) {
  * Plugins directory settings.
  */
 
-$plugins_path = 'vendor/plugins';
+$plugins_path = 'plugins';
 define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . $plugins_path );
 define( 'WP_PLUGIN_URL', WP_HOME . '/' . $plugins_path );
 define( 'PLUGINDIR', WP_CONTENT_DIR . $plugins_path );
