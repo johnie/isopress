@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5d509ed7a1787ba12d7186ca2103ba66",
+    "hash": "2dcbddf796f4fdda770824860afd359a",
     "packages": [
         {
             "name": "composer/installers",
@@ -134,10 +134,10 @@
         },
         {
             "name": "wordpress/wordpress",
-            "version": "4.0.1",
+            "version": "4.1.0",
             "dist": {
                 "type": "zip",
-                "url": "https://wordpress.org/wordpress-4.0.1.zip",
+                "url": "https://wordpress.org/wordpress-4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -163,11 +163,8 @@
             "require": {
                 "composer/installers": "~1.0"
             },
-            "replace": {
-                "wpackagist/timber-library": "self.version"
-            },
             "type": "wordpress-plugin",
-            "homepage": "http://wordpress.org/plugins/timber-library/"
+            "homepage": "https://wordpress.org/plugins/timber-library/"
         }
     ],
     "packages-dev": [],
@@ -175,6 +172,7 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.2"
     },
