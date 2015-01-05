@@ -195,3 +195,7 @@ Example:
 +----+--------------+-------------+---------------------+-------------+
 Connection to 127.0.0.1 closed.
 ```
+
+### License
+
+MIT © [Fredrik Forsmo](https://github.com/frozzare)
