@@ -9,7 +9,7 @@ require_once(dirname(__DIR__) . '/vendor/autoload.php');
 require_once(dirname(__DIR__) . '/config/application.php');
 
 /**
- * This will fix so stuff like page templates is loaded.
+ * This will fix so stuff like page templates and screenshot is loaded.
  */
 
 global $wp_theme_directories;
