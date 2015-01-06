@@ -7,4 +7,16 @@
 
 require_once(dirname(__DIR__) . '/vendor/autoload.php');
 require_once(dirname(__DIR__) . '/config/application.php');
+
+/**
+ * This will fix so stuff like page templates is loaded.
+ */
+
+global $wp_theme_directories;
+$wp_theme_directories[] = WP_CONTENT_DIR;
+
+/**
+ * Sets up WordPress vars and included files.
+ */
+
 require_once(ABSPATH . 'wp-settings.php');
