@@ -5,8 +5,8 @@
  * This file is required in the root directory so WordPress can find it.
  */
 
-require_once(dirname(__DIR__) . '/vendor/autoload.php');
-require_once(dirname(__DIR__) . '/config/application.php');
+require_once(__DIR__ . '/vendor/autoload.php');
+require_once(__DIR__ . '/config/application.php');
 
 /**
  * This will fix so stuff like page templates and screenshot is loaded.
