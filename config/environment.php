@@ -11,7 +11,7 @@ switch ($hostname) {
     define('WP_ENV', 'production');
     break;
   case 'stage':
-    define('WP_ENV', 'stage');
+    define('WP_ENV', 'staging');
     break;
   default:
     define('WP_ENV', 'development');
